@@ -1,0 +1,97 @@
+import work1 from '../../assets/imgs/works/1/1.jpg';
+import work2 from '../../assets/imgs/works/1/2.jpg';
+import work3 from '../../assets/imgs/works/1/3.jpg';
+import work4 from '../../assets/imgs/works/1/4.jpg';
+import work5 from '../../assets/imgs/works/1/5.jpg';
+import PortfolioSingle from './PortfolioSingle';
+
+
+const Portfolio = () => {
+    return (
+        <section className="portfolio-tab crev section-padding" data-scroll-index="3">
+                    <div className="container">
+                        <div className="sec-head mb-80">
+                            <h6 className="sub-title main-color mb-25">Our Portfolio</h6>
+                            <div className="bord pt-25 bord-thin-top d-flex align-items-center">
+                                <h2 className="fw-600 text-u ls1">Featured <span className="fw-200">projects</span></h2>
+                                <div className="ml-auto">
+                                    <a href="portfolio-outline.html" className="go-more">
+                                        <span className="text">View all Works</span>
+                                        <span className="icon ti-arrow-top-right"></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="row">
+                            <div className="col-lg-5 d-flex align-items-center justify-content-center">
+                                <div className="glry-img">
+                                    <div id="tab-1" className="bg-img tab-img current"
+                                        data-background={work1}></div>
+                                    <div id="tab-2" className="bg-img tab-img" data-background={work2}>
+                                    </div>
+                                    <div id="tab-3" className="bg-img tab-img" data-background={work3}>
+                                    </div>
+                                    <div id="tab-4" className="bg-img tab-img" data-background={work4}>
+                                    </div>
+                                    <div id="tab-5" className="bg-img tab-img" data-background={work5}>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="col-lg-6 offset-lg-1 content">
+                                <PortfolioSingle></PortfolioSingle>
+                                <div className="cluom mb-30" data-tab="tab-2">
+                                    <div className="info">
+                                        <h6 className="sub-title opacity-7">UI-UX Design</h6>
+                                        <h4>Proof Template</h4>
+                                    </div>
+                                    <div className="img">
+                                        <img src={work2} alt=""/>
+                                    </div>
+                                    <div className="more text-u ls1 fz-12">
+                                        <a href="project5.html">View Project <i className="ml-15 ti-arrow-top-right"></i></a>
+                                    </div>
+                                </div>
+                                <div className="cluom mb-30" data-tab="tab-3">
+                                    <div className="info">
+                                        <h6 className="sub-title opacity-7">UI-UX Design</h6>
+                                        <h4>Ledge Phone</h4>
+                                    </div>
+                                    <div className="img">
+                                        <img src={work3} alt=""/>
+                                    </div>
+                                    <div className="more text-u ls1 fz-12">
+                                        <a href="project4.html">View Project <i className="ml-15 ti-arrow-top-right"></i></a>
+                                    </div>
+                                </div>
+                                <div className="cluom mb-30" data-tab="tab-4">
+                                    <div className="info">
+                                        <h6 className="sub-title opacity-7">UI-UX Design</h6>
+                                        <h4>Frame Sans</h4>
+                                    </div>
+                                    <div className="img">
+                                        <img src={work4} alt=""/>
+                                    </div>
+                                    <div className="more text-u ls1 fz-12">
+                                        <a href="project3.html">View Project <i className="ml-15 ti-arrow-top-right"></i></a>
+                                    </div>
+                                </div>
+                                <div className="cluom" data-tab="tab-5">
+                                    <div className="info">
+                                        <h6 className="sub-title opacity-7">UI-UX Design</h6>
+                                        <h4>Modern Minimalist</h4>
+                                    </div>
+                                    <div className="img">
+                                        <img src={work5} alt=""/>
+                                    </div>
+                                    <div className="more text-u ls1 fz-12">
+                                        <a href="project2.html">View Project <i className="ml-15 ti-arrow-top-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+    );
+};
+
+export default Portfolio;

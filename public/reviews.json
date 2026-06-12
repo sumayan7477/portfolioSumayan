@@ -1,0 +1,47 @@
+{
+    "reviews": [
+      {
+        "client_name": "Sophia Martin",
+        "profession": "Marketing Manager",
+        "image": "sophia-martin.jpg",
+        "review": "Sumaiya was amazing! She understood our needs and delivered a user-friendly, responsive website that exceeded our expectations. The speed and functionality are top-notch, and we've already seen an increase in engagement."
+      },
+      {
+        "client_name": "James Thompson",
+        "profession": "Business Owner",
+        "image": "james-thompson.jpg",
+        "review": "The design services transformed our online presence. The website is visually stunning and perfectly reflects our brand. She was responsive throughout the process, and the end result was beyond impressive. Highly recommend her for any web design project!"
+      },
+      {
+        "client_name": "Emily Carter",
+        "profession": "Freelance Designer",
+        "image": "emily-carter.jpg",
+        "review": "Working with Sumaiya on my personal portfolio was a great experience. She brought my ideas to life with a clean, modern design that helps showcase my work beautifully. It's responsive and performs well on all devices."
+      },
+      {
+        "client_name": "Michael Johnson",
+        "profession": "E-commerce Entrepreneur",
+        "image": "michael-johnson.jpg",
+        "review": "The e-commerce site  developement was exceptional. It’s fast, secure, and fully optimized for mobile. She integrated all the functionalities I needed, including payment systems and customer accounts. I’m thrilled with the final product."
+      },
+      {
+        "client_name": "Olivia Williams",
+        "profession": "Startup Founder",
+        "image": "olivia-williams.jpg",
+        "review": " delivered a custom website for our startup, and we couldn't be happier with the result. It’s visually stunning, responsive, and packed with all the features we need. Her support during and after the launch has been fantastic."
+      },
+      {
+        "client_name": "David Brown",
+        "profession": "Software Engineer",
+        "image": "david-brown.jpg",
+        "review": "I was thoroughly impressed with Sumaiya's professionalism and technical expertise. The website she built is fast, scalable, and highly secure. She also went above and beyond in terms of support and ensuring the site met all our technical requirements."
+      },
+      {
+        "client_name": "Lily Adams",
+        "profession": "Creative Director",
+        "image": "lily-adams.jpg",
+        "review": " Provided me fantastic web design services for our agency. The website is visually appealing, easy to navigate, and perfectly matches our creative vision. It has significantly improved our online presence and client engagement."
+      }
+    ]
+  }
+  
