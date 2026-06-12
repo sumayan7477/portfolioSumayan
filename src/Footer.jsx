@@ -21,7 +21,7 @@ const Footer = () => {
         <div className="row">
           <div className="col-lg-3">
             <div className="logo icon-img-100">
-              <img src={logo} alt="" />
+              {/* <img src={logo} alt="" /> */}
             </div>
           </div>
           <div className="col-lg-4">
@@ -82,7 +82,7 @@ const Footer = () => {
                 <a
                   href="https://github.com/sumayan7477"
                   target="blank"
-                  className="hover-anim"
+                  className="hover-this"
                 >
                   <FaGithub className="fs-2"></FaGithub>
                 </a>

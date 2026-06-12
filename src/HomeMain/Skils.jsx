@@ -2,18 +2,40 @@ import { useEffect, useState } from "react";
 // import skillimg from "../assets/imgs/resume/s2.png";
 import Useaxios from "../Hooks/Useaxios";
 const Skils = () => {
-  const axiosPublic = Useaxios();
-  const [skills, setSkills] = useState([]);
-  useEffect(() => {
-    axiosPublic
-      .get("/skills")
-      .then(function (response) {
-        setSkills(response.data);
-      })
-      .catch(function (error) {
-        console.log(error);
-      });
-  }, []);
+  // const axiosPublic = Useaxios();
+  // const [skills, setSkills] = useState([]);
+  // useEffect(() => {
+  //   axiosPublic
+  //     .get("/skills")
+  //     .then(function (response) {
+  //       setSkills(response.data);
+  //     })
+  //     .catch(function (error) {
+  //       console.log(error);
+  //     });
+  // }, []);
+  const skills = [
+    { _id: 1, skill: "React.js", percentage: 95 },
+    { _id: 2, skill: "ASP.NET Core", percentage: 95 },
+    // { _id: 3, skill: "HTML5", percentage: 98 },
+    // { _id: 4, skill: "CSS3 / SCSS", percentage: 95 },
+    { _id: 5, skill: "JavaScript (ES6+)", percentage: 95 },
+    { _id: 6, skill: "Bootstrap 5", percentage: 95 },
+    // { _id: 7, skill: "Node.js", percentage: 85 },
+    { _id: 8, skill: "Express.js", percentage: 85 },
+    { _id: 9, skill: "Tailwind CSS", percentage: 80 },
+    { _id: 10, skill: "C#", percentage: 80 },
+    { _id: 11, skill: "MongoDB", percentage: 85 },
+    { _id: 12, skill: "SQL Server", percentage: 80 },
+    { _id: 13, skill: "MySQL", percentage: 85 },
+    { _id: 14, skill: "REST API Development", percentage: 90 },
+    { _id: 15, skill: "JWT Authentication", percentage: 85 },
+    { _id: 16, skill: "Git & GitHub", percentage: 90 },
+    { _id: 17, skill: "Firebase", percentage: 85 },
+    { _id: 18, skill: "Stripe Integration", percentage: 80 },
+    { _id: 19, skill: "SSLCommerz Integration", percentage: 85 },
+    { _id: 20, skill: "Responsive Web Design", percentage: 95 },
+  ];
 
   return (
     <section

@@ -8,7 +8,7 @@ const Navbar = () => {
     <nav className="navbar navbar-expand-lg bord blur">
       <div className="container">
         <a className="logo icon-img-100" >
-        <Link to='/'><img src={logo} alt="logo" /></Link> 
+        {/* <Link to='/'><img src={logo} alt="logo" /></Link>  */}
         </a>
 
         <div
@@ -18,7 +18,7 @@ const Navbar = () => {
           <ul className="navbar-nav">
             <li className="nav-item dropdown">
               <a
-                className="nav-link dropdown-toggle"
+                className="nav-link "
                 data-toggle="dropdown"
                 
                 role="button"

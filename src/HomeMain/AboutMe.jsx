@@ -47,13 +47,16 @@ const AboutMe = () => {
               <div className="sec-head mb-30">
                 <h6 className="sub-title mb-15 main-color">About Me</h6>
                 <h2>
-                  MERN stack developer <br /> and next js developer.
+                  Full-stack web developer <br /> focused on building modern web
+                  experiences.
                 </h2>
+
                 <div className="text mt-15">
                   <p>
-                    Build dynamic web applications that enhance brands and
-                    provide impactful digital solutions for businesses and
-                    individuals..
+                    I build responsive and user-focused web applications that
+                    help businesses and individuals turn ideas into practical
+                    digital solutions. My focus is clean design, smooth
+                    performance, and real-world usability.
                   </p>
                 </div>
               </div>

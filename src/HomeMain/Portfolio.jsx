@@ -2,6 +2,8 @@ import { Link } from "react-router-dom";
 import work3 from "../assets/imgs/works/1/website1.png";
 import work2 from "../assets/imgs/works/1/website2.png";
 import work1 from "../assets/imgs/works/1/website3.jpg";
+import mathguru from "../assets/imgs/works/1/mathguru.png";
+import shafedu from "../assets/imgs/works/1/shafedu.png";
 
 const Portfolio = () => {
   return (
@@ -24,7 +26,7 @@ const Portfolio = () => {
             <div className="col-lg-4 items">
               <div className="item">
                 <div className="img" data-tab="tab-1">
-                  <img src={work1} alt="" />
+                  <img src={mathguru} alt="" />
                   <Link to='/portfolio' className="link-overlay"></Link>
                 </div>
                 <div className="cont">
@@ -48,7 +50,7 @@ const Portfolio = () => {
             <div className="col-lg-4 items">
               <div className="item">
                 <div className="img" data-tab="tab-3">
-                  <img src={work3} alt="" />
+                  <img src={shafedu} alt="" />
                   <Link to='/portfolio' className="link-overlay"></Link>
                 </div>
                 <div className="cont">
