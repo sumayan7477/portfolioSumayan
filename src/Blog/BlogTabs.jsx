@@ -2,9 +2,12 @@ import BlogSingle from "./BlogSingle";
 
 const BlogTabs = ({ items }) => {
   return (
-    <div className="md-mb80 ">
+    <div className="md-mb80">
       {items.map((item) => (
-        <BlogSingle key={item._id} item={item}></BlogSingle>
+        <BlogSingle
+          key={item.id}
+          item={item}
+        />
       ))}
     </div>
   );

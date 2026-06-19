@@ -1,5 +1,7 @@
 import PageHeader from "../components/PageHeader";
 // import Portfolio from "../HomeMain/Portfolio";
+import mathguru from "../assets/imgs/works/1/mathguru.png";
+import shafedu from "../assets/imgs/works/1/shafedu.png";
 import work3 from "../assets/imgs/works/1/website1.png";
 import work2 from "../assets/imgs/works/1/website2.png";
 import work1 from "../assets/imgs/works/1/website3.jpg";
@@ -23,6 +25,132 @@ const PortfolioMain = () => {
       <section className="blog-crev section-padding">
         <div className="container">
           <div className="row">
+
+
+            <div className="col-lg-4">
+              <div className="item sub-bg mb-40">
+                <div className="img">
+                  <img src={mathguru} alt="" />
+                  <div className="tag sub-bg">
+                    <span>Education</span>
+                    <div className="shap-right-bottom">
+                      <svg
+                        viewBox="0 0 11 11"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        className="w-11 h-11"
+                      >
+                        <path
+                          d="M11 1.54972e-06L0 0L2.38419e-07 11C1.65973e-07 4.92487 4.92487 1.62217e-06 11 1.54972e-06Z"
+                          fill="#1d1d1d"
+                        ></path>
+                      </svg>
+                    </div>
+                    <div className="shap-left-bottom">
+                      <svg
+                        viewBox="0 0 11 11"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        className="w-11 h-11"
+                      >
+                        <path
+                          d="M11 1.54972e-06L0 0L2.38419e-07 11C1.65973e-07 4.92487 4.92487 1.62217e-06 11 1.54972e-06Z"
+                          fill="#1d1d1d"
+                        ></path>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div className="cont">
+                  <div className="date fz-13 text-u ls1 mb-10 opacity-7">
+                    <a href="blog-details.html">30 august 2024</a>
+                  </div>
+                  <h5>
+                    <a href="https://mathguru.academy/">
+                      MathGuru : Mathmatics learning platform
+                    </a>
+                  </h5>
+                  <a
+                    href="blog-details.html"
+                    className="d-flex align-items-center mt-30"
+                  >
+                    <span className="text mr-15">
+                      <a
+                        href="https://mathguru.academy/"
+                        target="blank"
+                      >
+                        Live View
+                      </a>
+                    </span>
+                    <span>
+                      <IoArrowRedoOutline />
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-4">
+              <div className="item sub-bg mb-40">
+                <div className="img">
+                  <img src={shafedu} alt="" />
+                  <div className="tag sub-bg">
+                    <span>Portfolio</span>
+                    <div className="shap-right-bottom">
+                      <svg
+                        viewBox="0 0 11 11"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        className="w-11 h-11"
+                      >
+                        <path
+                          d="M11 1.54972e-06L0 0L2.38419e-07 11C1.65973e-07 4.92487 4.92487 1.62217e-06 11 1.54972e-06Z"
+                          fill="#1d1d1d"
+                        ></path>
+                      </svg>
+                    </div>
+                    <div className="shap-left-bottom">
+                      <svg
+                        viewBox="0 0 11 11"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        className="w-11 h-11"
+                      >
+                        <path
+                          d="M11 1.54972e-06L0 0L2.38419e-07 11C1.65973e-07 4.92487 4.92487 1.62217e-06 11 1.54972e-06Z"
+                          fill="#1d1d1d"
+                        ></path>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div className="cont">
+                  <div className="date fz-13 text-u ls1 mb-10 opacity-7">
+                    <a href="blog-details.html">30 august 2024</a>
+                  </div>
+                  <h5>
+                    <a href="https://www.shafiqeduhub.com/">
+                     ShafiqEduHub -  portfolio Website Built with PhP
+                    </a>
+                  </h5>
+                  <a
+                    href="blog-details.html"
+                    className="d-flex align-items-center mt-30"
+                  >
+                    <span className="text mr-15">
+                      <a
+                        href="https://www.shafiqeduhub.com/"
+                        target="blank"
+                      >
+                        Live View
+                      </a>
+                    </span>
+                    <span>
+                      <IoArrowRedoOutline />
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>
             <div className="col-lg-4">
               <div className="item sub-bg mb-40">
                 <div className="img">
@@ -62,7 +190,7 @@ const PortfolioMain = () => {
                     <a href="blog-details.html">30 august 2024</a>
                   </div>
                   <h5>
-                    <a href="blog-details.html">
+                    <a href="https://bistro-boss-badcf.web.app/">
                       Bistro boss - Modern Restaurant Website Built with React
                     </a>
                   </h5>
@@ -125,7 +253,7 @@ const PortfolioMain = () => {
                   </div>
                   <h5>
                     <a href="blog-details.html">
-                      Bistro boss - Modern Restaurant Website Built with React
+                      StarTech : E-Commerce platform
                     </a>
                   </h5>
                   <a

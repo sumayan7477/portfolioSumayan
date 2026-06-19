@@ -209,6 +209,14 @@ const Navbar = () => {
                         <div className="links row">
                           <div className="col-lg-4">
                             <a className="dropdown-item" >
+                              <Link to='https://mathguru.academy/' target="blank">Education</Link> 
+                            </a>
+                            <a className="dropdown-item" >
+                            <Link to='https://www.shafiqeduhub.com/' target="blank">Portfolio</Link> 
+                            </a>
+                          </div>
+                          <div className="col-lg-4">
+                            <a className="dropdown-item" >
                               <Link to='https://bistro-boss-badcf.web.app/' target="blank">Restaurant</Link> 
                             </a>
                             <a className="dropdown-item" >

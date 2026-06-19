@@ -31,3 +31,6 @@ const Main = () => {
 };
 
 export default Main;
+//git add .
+//git commit -m "second commit"
+//git push origin main

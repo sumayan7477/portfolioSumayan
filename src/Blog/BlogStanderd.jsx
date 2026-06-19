@@ -1,75 +1,78 @@
-// import { useParams } from "react-router-dom";
 import PageHeader from "../components/PageHeader";
 import BlogSideBar from "./BlogSideBar";
 import { useState } from "react";
-import UseBlogs from "../Hooks/UseBlogs";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import "react-tabs/style/react-tabs.css";
 import BlogTabs from "./BlogTabs";
+import blogsData from "../data/blogsData";
+
 
 const BlogStanderd = () => {
-  // const catagories = [
-  //   "Web Development",
-  //   "Full Stack Development",
-  //   "Front-End Development",
-  //   "Web Design",
-  //   "Business Websites",
-  // ];
-  // const { category } = useParams();
-  // const initialIndex = catagories.indexOf(category);
-  const [tavIndex, setTabIndex] = useState(0);
-  const [blogs] = UseBlogs();
-  // console.log(blogs);
+  const [tabIndex, setTabIndex] = useState(0);
 
-  
+  // ✅ STATIC BLOG DATA
+  const blogs =blogsData;
 
+  // ✅ FILTERING BY CATEGORY
   const web_development = blogs.filter(
-    (blog) => blog.category === "Web Development"
+    (b) => b.category === "Web Development"
   );
-  const Front_End_Development = blogs.filter((blog) => blog.category === "Front-End Development");
-  const Full_Stack_Development = blogs.filter((blog) => blog.category === "Full Stack Development");
-  const Web_Design = blogs.filter((blog) => blog.category === "Web Design");
-  const Business_Websites = blogs.filter((blog) => blog.category === "Business Websites");
 
-  console.log(web_development, Front_End_Development , Full_Stack_Development, Web_Design, Business_Websites)
+  const front_end = blogs.filter(
+    (b) => b.category === "Front-End Development"
+  );
+
+  const full_stack = blogs.filter(
+    (b) => b.category === "Full Stack Development"
+  );
+
+  const web_design = blogs.filter(
+    (b) => b.category === "Web Design"
+  );
+
+  const business = blogs.filter(
+    (b) => b.category === "Business Websites"
+  );
 
   return (
     <>
-      <PageHeader title={"Blogs"} subTitle={"Blogs"}></PageHeader>
+      <PageHeader title={"Blogs"} subTitle={"Blogs"} />
+
       <section className="blog-main section-padding">
         <div className="container">
-          <Tabs
-            defaultIndex={tavIndex}
-            onSelect={(index) => setTabIndex(index)}
-          >
+          <Tabs defaultIndex={tabIndex} onSelect={(i) => setTabIndex(i)}>
             <div className="row lg-marg justify-content-around">
               <div className="col-lg-7">
-                <TabList className={"d-none"}>
-                  <Tab>tab 1</Tab>
-                  <Tab>tab 2</Tab>
-                  <Tab>tab 2</Tab>
-                  <Tab>tab 2</Tab>
-                  <Tab>tab 2</Tab>
+                <TabList className="d-none">
+                  <Tab>Web</Tab>
+                  <Tab>Front</Tab>
+                  <Tab>Full</Tab>
+                  <Tab>Design</Tab>
+                  <Tab>Business</Tab>
                 </TabList>
 
                 <TabPanel>
-                  <BlogTabs items={web_development}></BlogTabs>
+                  <BlogTabs items={web_development} />
                 </TabPanel>
+
                 <TabPanel>
-                  <BlogTabs items={Front_End_Development}></BlogTabs>
+                  <BlogTabs items={front_end} />
                 </TabPanel>
+
                 <TabPanel>
-                  <BlogTabs items={Full_Stack_Development}></BlogTabs>
+                  <BlogTabs items={full_stack} />
                 </TabPanel>
+
                 <TabPanel>
-                  <BlogTabs items={Web_Design}></BlogTabs>
+                  <BlogTabs items={web_design} />
                 </TabPanel>
+
                 <TabPanel>
-                  <BlogTabs items={Business_Websites}></BlogTabs>
+                  <BlogTabs items={business} />
                 </TabPanel>
               </div>
 
-              <BlogSideBar></BlogSideBar>
+              <BlogSideBar />
             </div>
           </Tabs>
         </div>

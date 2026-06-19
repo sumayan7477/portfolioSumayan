@@ -68,12 +68,11 @@ const router = createBrowserRouter([
       },
       {
         path: "/blogs",
-        element: <BlogStanderd></BlogStanderd>,
+        element: <BlogStanderd />,
       },
       {
         path: "/blogsDetails/:id",
-        element: <BlogDetailsStanders></BlogDetailsStanders>,
-        loader:({params})=>fetch(`https://infolio-port-server.vercel.app/blogs/${params.id}`),
+        element: <BlogDetailsStanders />,
       },
       {
         path: "/blogsDetails",
@@ -92,5 +91,5 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     <QueryClientProvider client={queryClient}>
       <RouterProvider router={router} />
     </QueryClientProvider>
-  </React.StrictMode>
+  </React.StrictMode>,
 );
